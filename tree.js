@@ -21,8 +21,8 @@ const sleep = (waitTimeInMs) => new Promise(resolve => setTimeout(resolve, waitT
 client.on('message', message => {
     console.log(message.from);
     console.log(message.body);
-    if(message.from!=='919082305056@c.us'||'120363139742308131@g.us') {
-        client.sendMessage('120363139742308131@g.us', message.body);
+    if(message.from!=='@c.us'||'@g.us') {
+        client.sendMessage('@g.us', message.body);
         console.log('Relayed to the group:',message.body);
     }
 });
